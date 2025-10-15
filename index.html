@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="hu">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nádtető</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f5f0e6;
+        }
+
+        nav {
+            font-size: 20px;
+
+
+        }
+
+        .carousel-item img {
+            filter: brightness(60%);
+        }
+
+        .carousel-item img {
+            height: 100vh;
+            min-height: 350px;
+            background: no-repeat center center scroll;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            object-fit: cover;
+        }
+
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        h1 {
+            color: rgb(26, 26, 26);
+            font-size: 50px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px #464545;
+        }
+
+        @media screen and (max-width: 768px) {
+            .carousel-item {
+                height: auto;
+                min-height: auto;
+            }
+
+            .carousel-item img {
+                width: 100%;
+                height: auto;
+                max-height: 100vh;
+            }
+
+            h1 {
+                margin-top: 50px;
+                font-size: 30px;
+            }
+
+            .carousel-caption {
+                padding: 10px;
+                position: absolute;
+                bottom: 0;
+            }
+
+            .carousel-caption h4 {
+                font-size: 18px;
+            }
+
+            .carousel-caption p {
+                font-size: 14px;
+                margin-bottom: 5px;
+            }
+
+            .carousel-indicators {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .carousel-item {
+                height: auto;
+            }
+
+            .carousel-indicators {
+                display: none;
+            }
+        }
+
+        #container {
+            margin-top: 40px;
+            margin-bottom: 80px;
+            padding: 40px;
+            border-radius: 15px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            text-align: justify;
+            font-size: 17px;
+            max-width: 1100px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #container img {
+            border-radius: 10px;
+            height: auto;
+            max-height: 350px;
+            object-fit: cover;
+        }
+
+        #container h2 {
+            margin-top: 10px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        #container p,
+        #container ul {
+            margin-bottom: 25px;
+        }
+
+        hr {
+            border: 0;
+            height: 2px;
+            background-color: #2b4a64;
+            width: 50px;
+            margin: 10px auto 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand px-5" href="#">Cég név</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item px-2">
+                        <a class="nav-link active" aria-current="page">Főoldal</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="galery.html">Galéria</a>
+                    </li>
+                    <!-- <li class="nav-item px-2">
+                        <a class="nav-link" href="prev-work.html">Előző munkáink</a>
+                    </li> -->
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="proposal.html">Ajánlat kérés</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="slideshow" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#slideshow" data-bs-slide-to="0" class="active" aria-label="Slide 1"
+                aria-current="true"></button>
+            <button type="button" data-bs-target="#slideshow" data-bs-slide-to="1" aria-label="Slide 2"
+                class=""></button>
+            <button type="button" data-bs-target="#slideshow" data-bs-slide-to="2" aria-label="Slide 3"
+                class=""></button>
+            <button type="button" data-bs-target="#slideshow" data-bs-slide-to="3" aria-label="Slide 4"
+                class=""></button>
+            <button type="button" data-bs-target="#slideshow" data-bs-slide-to="4" aria-label="Slide 5"
+                class=""></button>
+            <button type="button" data-bs-target="#slideshow" data-bs-slide-to="5" aria-label="Slide 6"
+                class=""></button>
+            <button type="button" data-bs-target="#slideshow" data-bs-slide-to="6" aria-label="Slide 7"
+                class=""></button>
+            <button type="button" data-bs-target="#slideshow" data-bs-slide-to="7" aria-label="Slide 8"
+                class=""></button>
+            <button type="button" data-bs-target="#slideshow" data-bs-slide-to="8" aria-label="Slide 9"
+                class=""></button>
+            <button type="button" data-bs-target="#slideshow" data-bs-slide-to="9" aria-label="Slide 10"
+                class=""></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/images/dekor/d02.jpg" class="d-block w-100" alt="Nádtető fedés">
+                <div class="carousel-caption">
+                    <h4>Természetes védelem és szépség</h4>
+                    <p>A nádtető nemcsak időtálló, hanem természetes hőszigetelő is, amely évszázadok óta megőrzi a
+                        házak melegét és hangulatát.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/images/javit/j03.jpg" class="d-block w-100" alt="Nádtető javítás">
+                <div class="carousel-caption">
+                    <h4>Hagyomány és mesterség</h4>
+                    <p>Minden tetőt kézzel készítünk, a legjobb minőségű nádból, hogy háza hosszú évekig biztonságban
+                        legyen az időjárással szemben.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/images/javit/j02.jpg" class="d-block w-100" alt="Nádtető karbantartás">
+                <div class="carousel-caption">
+                    <h4>Karbantartás és gondoskodás</h4>
+                    <p>A nádtető élettartama a rendszeres ápoláson múlik. Gondoskodunk róla, hogy tetője mindig
+                        kifogástalan állapotban legyen.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/images/overall/07.jpg" class="d-block w-100" alt="Nádtető építés">
+                <div class="carousel-caption">
+                    <h4>Tapasztalat Európa-szerte</h4>
+                    <p>Több mint 300 projektet tudhatunk magunkénak Európában – Franciaországban, Hollandiában,
+                        Belgiumban, Dániában, Ausztriában, Magyarországon, Szlovákiában és Szlovéniában.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/images/overall/12.jpg" class="d-block w-100" alt="Nádtetőfedés munka közben">
+                <div class="carousel-caption">
+                    <h4>Minőség minden szálban</h4>
+                    <p>Csak gondosan válogatott, kiváló minőségű nádat használunk, amely megfelel az idő próbájának és
+                        az európai szabványoknak.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/images/javit/j05.jpg" class="d-block w-100" alt="Nádtető felújítás">
+                <div class="carousel-caption">
+                    <h4>Megújulás szakértő kezekben</h4>
+                    <p>Ha a tetője megsérült vagy elhasználódott, felújítjuk és új életet adunk neki – hogy újra
+                        évtizedekig védje otthonát.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/images/acs/a03.jpg" class="d-block w-100" alt="Tetőszerkezet építés">
+                <div class="carousel-caption">
+                    <h4>Erős alap, biztos tető</h4>
+                    <p>Vállaljuk a teljes tetőszerkezet megépítését vagy felújítását is, hogy nádtetője a legjobb
+                        alapokra kerüljön.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/images/acs/a05.jpg" class="d-block w-100" alt="Nádtető készítése">
+                <div class="carousel-caption">
+                    <h4>Hagyomány, amit továbbadunk</h4>
+                    <p>Évszázados mesterséget viszünk tovább modern technológiával, hogy a nádtető újra a minőség és
+                        természet szimbóluma legyen.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/images/javit/j11.jpg" class="d-block w-100" alt="Nádtető tisztítás">
+                <div class="carousel-caption">
+                    <h4>Tisztítás és gombaeltávolítás</h4>
+                    <p>Hogy a nádtetőd sokáig tartson, karban kell tartani a gombák és moha eltávolításával – ebben is
+                        segítünk.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/images/javit/j10.jpg" class="d-block w-100" alt="Nádtető részlet">
+                <div class="carousel-caption">
+                    <h4>Természetes elegancia</h4>
+                    <p>A nádtető minden környezetben harmonikus, időtálló és egyedi megjelenést biztosít otthonának.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="container">
+        <h1 class="text-center mb-5">Cég név</h1>
+
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6">
+                <h2>Rólunk</h2>
+                <p>Cégünk több generáció óta foglalkozik nádtetők készítésével, felújításával és karbantartásával.
+                    Munkánk során a hagyományos kézműves technikákat ötvözzük modern megoldásokkal, hogy minden tető
+                    nemcsak esztétikus, hanem rendkívül tartós is legyen.</p>
+                <p>Számunkra a nádtető nem csupán egy építőanyag – hanem egy életérzés, ami közelebb hoz a természethez,
+                    és egyedi karaktert ad minden otthonnak. Több mint <strong>300 sikeres projektet</strong>
+                    valósítottunk meg Európa-szerte: Franciaországban, Hollandiában, Belgiumban, Dániában, Ausztriában,
+                    Magyarországon, Szlovákiában és Szlovéniában.</p>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="images/family.jpg" alt="Rólunk kép" class="img-fluid rounded">
+            </div>
+        </div>
+
+        <hr>
+
+        <h2 class="text-center mb-4">Szolgáltatásaink</h2>
+
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6 text-center">
+                <img src="images/overall/11.jpg" alt="Új nádtető építés" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6">
+                <h4>Terített – Új nádtetők építése</h4>
+                <p>Új nádtetőket építünk mindenféle építményhez: családi házakhoz, pajtákhoz, műhelyekhez, éttermekhez
+                    vagy turisztikai épületekhez. A gondosan előkészített nádat kézzel helyezzük fel, hogy tökéletes
+                    illeszkedést és hőszigetelést biztosítson. A végeredmény: természetes szépség, ami évtizedekig tart.
+                </p>
+            </div>
+        </div>
+
+        <div class="row align-items-center mb-5 flex-md-row-reverse">
+            <div class="col-md-6 text-center">
+                <img src="images/javit/j11.jpg" alt="Nádtető felújítás" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6">
+                <h4>Felújítás – Régi tetők megújítása</h4>
+                <p>Ha a nádtetőt az időjárás, a szél, a jég vagy a kártevők megrongálták, szakszerűen helyreállítjuk.
+                    Cseréljük a sérült nádrétegeket, újrafedjük a tetőt, és megerősítjük a szerkezetet. A felújított
+                    nádtető ismét ellenálló, vízzáró és gyönyörű lesz – mint újkorában.</p>
+            </div>
+        </div>
+
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6 text-center">
+                <img src="images/javit/j07.jpg" alt="Karbantartás" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6">
+                <h4>Interjú – Karbantartás és gondozás</h4>
+                <p>Ahhoz, hogy a nádtető hosszú életű maradjon, rendszeres karbantartásra van szükség. 4–5 évente
+                    érdemes elvégezni a moha eltávolítását, a gombaölő kezelést, és a kisebb javításokat. Mi elvégezzük
+                    mindezt precízen, így a tető évtizedekig megőrzi természetes védelmét és szépségét.</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2 class="text-center mb-4">Képességeink és tapasztalataink</h2>
+
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6">
+                <p>Vállaljuk tetőszerkezetek építését vagy felújítását, valamint a nádtető lerakása előtti szigetelést
+                    is. Termékeinket kizárólag minőségi, ellenőrzött forrásból származó nádanyagból készítjük. Csapatunk
+                    minden tagja tapasztalt mester, akik a legapróbb részletre is odafigyelnek – mert tudjuk, hogy a
+                    minőség a részletekben rejlik.</p>
+                <p>Munkánk során nemcsak építünk, hanem kapcsolatot is teremtünk: az ügyfelekkel, a természettel, és a
+                    hagyományokkal, amelyeket őrzünk és továbbadunk.</p>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="images/javit/j05.jpg" alt="Munkánk közben" class="img-fluid rounded">
+            </div>
+        </div>
+
+        <hr>
+
+        <h2 class="text-center mb-4">A nádtető előnyei</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <ul>
+                    <li>Kiváló hő- és hangszigetelő képesség.</li>
+                    <li>Természetes, környezetbarát és újrahasznosítható anyag.</li>
+                    <li>Nem igényel külön szigetelést – 30 cm nád 10 cm szigetelésnek felel meg.</li>
+                    <li>Megfelelő karbantartással akár 60 évig is tartós maradhat.</li>
+                    <li>Elegáns, természetes megjelenést biztosít minden környezetben.</li>
+                </ul>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="images/javit/j10.jpg" alt="Nádtető előnyei" class="img-fluid rounded">
+            </div>
+        </div>
+
+
+        <hr>
+        <h2 class="text-center mb-4">Lépjen kapcsolatba velünk</h2>
+        <p class="text-center">Kérjen ajánlatot, ha új nádtetőt szeretne, meglévő tetőjét felújíttatná, vagy csak
+            tanácsra van szüksége karbantartással kapcsolatban.
+            Elérhetőségeinket megtalálja az <a href="proposal.html">Ajánlat kérés</a> oldalon.
+            Minden tető egy történet – írjuk meg együtt az Önének a következő fejezetét!</p>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script>
+        function navbar_fix() {
+            nav = document.getElementById("navbar")
+            if (window.innerWidth < 768) {
+                nav.classList.remove("fixed-top")
+            } else {
+                nav.classList.add("fixed-top")
+
+            }
+
+        }
+        window.onload = navbar_fix()
+        window.addEventListener("resize", navbar_fix)
+    </script>
+</body>
+
+</html>
